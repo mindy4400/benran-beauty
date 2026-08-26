@@ -21,3 +21,14 @@
 .knowledge{background:var(--paper)}.article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}.article-card{display:flex;flex-direction:column;background:var(--cream);border-top:3px solid var(--sage);padding:34px 30px}.article-meta{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.08em}.article-card h3{font-family:var(--serif);font-size:23px;line-height:1.55;margin:14px 0}.article-card p,.article-card li{color:var(--muted);font-size:14px}.article-card ul{padding-left:20px;margin:4px 0 24px}.source-link{margin-top:auto;color:var(--sage-dark);font-size:12px;font-weight:700;border-top:1px solid var(--line);padding-top:16px}.knowledge-disclaimer{max-width:900px;margin:30px auto 0;text-align:center;color:var(--muted);font-size:12px}
 .partners{background:var(--cream)}.partner-card{background:var(--sage-dark);color:#fff;padding:60px;display:flex;align-items:center;justify-content:space-between;gap:60px;box-shadow:var(--shadow)}.partner-card>div{max-width:760px}.partner-card h2{font-family:var(--serif);font-size:clamp(30px,4vw,44px);line-height:1.45;margin:0 0 16px}.partner-card p{color:#e1e6dc}.partner-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.partner-tags span{border:1px solid rgba(255,255,255,.28);padding:7px 12px;font-size:13px}
 @media(max-width:1050px){.brand img{width:165px}.site-header nav{gap:12px;font-size:12px}}@media(max-width:900px){.article-grid{grid-template-columns:1fr}.partner-card{display:block;padding:42px}.partner-card .button{margin-top:24px}}@media(max-width:560px){.article-card{padding:28px 24px}.partner-card{padding:34px 24px}}
+
+/* Scalp care team */
+.team{background:var(--paper)}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.team-card{background:var(--cream);border-bottom:2px solid var(--sage-soft)}
+.team-card img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top}
+.team-card div{padding:22px 18px;text-align:center}
+.team-card h3{font-family:var(--serif);font-size:21px;margin:0 0 4px}
+.team-card p{margin:0;color:var(--sage);font-size:13px;letter-spacing:.08em}
+@media(max-width:900px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.team-grid{gap:14px}.team-card div{padding:17px 10px}.team-card h3{font-size:18px}}
