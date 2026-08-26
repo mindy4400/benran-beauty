@@ -34,3 +34,21 @@
 .team-credentials li+li{margin-top:5px}
 @media(max-width:900px){.team-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.team-grid{gap:14px}.team-card div{padding:17px 10px}.team-card h3{font-size:18px}}
+
+
+/* Multi-page website */
+.site-header nav a[aria-current="page"]{color:var(--sage-dark);font-weight:700;border-bottom:1px solid var(--sage)}
+.page-main{padding-top:82px}
+.page-hero{padding:105px 0 90px;background:linear-gradient(135deg,var(--cream),var(--sage-soft));text-align:center}
+.page-hero .container{max-width:850px}
+.page-hero h1{font-family:var(--serif);font-size:clamp(38px,5vw,58px);line-height:1.35;margin:0 0 20px}
+.page-hero p:last-child{max-width:720px;margin:0 auto;color:var(--muted);font-size:17px}
+.home-directory{background:var(--cream)}
+.home-link-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.home-link-card{display:block;background:var(--paper);padding:34px 30px;border-top:3px solid var(--sage);transition:.25s}
+.home-link-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.home-link-card span{font-family:var(--serif);color:var(--gold);font-size:13px}
+.home-link-card h3{font-family:var(--serif);font-size:23px;margin:12px 0 8px}
+.home-link-card p{color:var(--muted);font-size:14px;margin:0}
+@media(max-width:900px){.home-link-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.page-hero{padding:76px 0 62px}.page-hero p:last-child{font-size:15px}.home-link-grid{grid-template-columns:1fr}.home-link-card{padding:28px 24px}}
