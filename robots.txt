@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mindy4400.github.io/benran-beauty/sitemap.xml
