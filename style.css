@@ -54,3 +54,14 @@
 @media(max-width:560px){.page-hero{padding:76px 0 62px}.page-hero p:last-child{font-size:15px}.home-link-grid{grid-template-columns:1fr}.home-link-card{padding:28px 24px}}
 
 .article-sources{margin-top:auto;border-top:1px solid var(--line);padding-top:16px;display:grid;gap:8px}.article-sources .source-link{margin-top:0;border-top:0;padding-top:0}
+
+/* Service process gallery */
+.service-gallery{background:var(--paper)}
+.service-photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service-photo{margin:0;background:var(--cream);border-bottom:2px solid var(--sage-soft)}
+.service-photo img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.service-photo figcaption{padding:22px 20px;display:flex;flex-direction:column;gap:5px}
+.service-photo strong{font-family:var(--serif);font-size:20px;color:var(--ink)}
+.service-photo span{font-size:13px;color:var(--muted)}
+.service-photo small{margin-top:7px;color:var(--sage);font-size:11px;letter-spacing:.08em}
+@media(max-width:850px){.service-photo-grid{grid-template-columns:1fr}.service-photo{max-width:700px;margin-inline:auto;width:100%}}
