@@ -66,3 +66,149 @@ p,li{overflow-wrap:break-word;text-wrap:pretty}h1,h2,h3{overflow-wrap:break-word
 .service-photo span{font-size:13px;color:var(--muted)}
 .service-photo small{margin-top:7px;color:var(--sage);font-size:11px;letter-spacing:.08em}
 @media(max-width:850px){.service-photo-grid{grid-template-columns:1fr}.service-photo{max-width:700px;margin-inline:auto;width:100%}}
+
+/* Brand refresh — aligned with the botanical B identity */
+:root{
+  --cream:#f7f6ee;
+  --paper:#fffef9;
+  --sage:#6f7d62;
+  --sage-dark:#354431;
+  --sage-soft:#e6eadf;
+  --gold:#a99a6b;
+  --ink:#293127;
+  --muted:#687064;
+  --line:#dfe3d8;
+  --shadow:0 22px 65px rgba(53,68,49,.12);
+}
+body{
+  background:
+    radial-gradient(circle at 4% 8%,rgba(154,170,137,.15),transparent 22rem),
+    radial-gradient(circle at 96% 30%,rgba(197,207,184,.18),transparent 25rem),
+    var(--cream);
+}
+.site-header{
+  background:rgba(255,254,249,.91);
+  border-bottom:1px solid rgba(53,68,49,.1);
+  box-shadow:0 8px 32px rgba(53,68,49,.045);
+}
+.brand{display:inline-flex;align-items:center;gap:11px;min-width:190px}
+.brand img{
+  content:url("assets/images/logo-mark.png");
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  object-fit:cover;
+  object-position:center;
+  mix-blend-mode:multiply;
+}
+.brand:after{
+  content:"本然美苑";
+  color:var(--sage-dark);
+  font-family:var(--serif);
+  font-size:21px;
+  letter-spacing:.16em;
+  white-space:nowrap;
+}
+.nav-cta,.button-primary{
+  background:linear-gradient(135deg,#718066,#485a43);
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 12px 30px rgba(53,68,49,.18);
+}
+.button,.nav-cta{border-radius:999px}
+.button-outline{border-color:rgba(53,68,49,.42);background:rgba(255,255,255,.42)}
+.hero:after,.page-hero:after{
+  content:"";
+  position:absolute;
+  width:360px;
+  height:335px;
+  right:-85px;
+  bottom:-90px;
+  background:url("assets/images/logo-mark.png") center/contain no-repeat;
+  opacity:.075;
+  mix-blend-mode:multiply;
+  pointer-events:none;
+}
+.hero{isolation:isolate}
+.hero-overlay{background:linear-gradient(90deg,rgba(249,248,241,.98) 0%,rgba(249,248,241,.91) 40%,rgba(249,248,241,.24) 72%,rgba(249,248,241,.06) 100%)}
+.eyebrow{color:#758368}
+.hero h1,.section-heading h2,.signal-section h2,.about h2,.postpartum h2,.booking h2,.page-hero h1{color:var(--sage-dark)}
+.signal-grid div,.service-card,.home-link-card,.article-card,.team-card,.service-photo,.story-card{
+  border-radius:18px;
+  overflow:hidden;
+}
+.signal-grid div{
+  border:1px solid rgba(111,125,98,.12);
+  border-left:3px solid var(--sage);
+  box-shadow:0 8px 28px rgba(53,68,49,.04);
+}
+.services{background:linear-gradient(145deg,#e9ede3,#dfe5d7)}
+.service-card,.home-link-card,.article-card{
+  border-top:0;
+  box-shadow:0 14px 42px rgba(53,68,49,.07);
+}
+.service-card:before,.home-link-card:before,.article-card:before{
+  content:"";
+  display:block;
+  width:42px;
+  height:2px;
+  margin-bottom:18px;
+  background:linear-gradient(90deg,var(--sage),var(--gold));
+}
+.experience,.partner-card{
+  background:
+    radial-gradient(circle at 90% 10%,rgba(255,255,255,.08),transparent 20rem),
+    linear-gradient(135deg,#33422f,#52624a);
+}
+.booking-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:28px;
+  background:linear-gradient(135deg,#637258,#3f503b);
+}
+.booking-card:after{
+  content:"";
+  position:absolute;
+  right:-80px;
+  bottom:-120px;
+  width:310px;
+  height:290px;
+  background:url("assets/images/logo-mark.png") center/contain no-repeat;
+  opacity:.08;
+  pointer-events:none;
+}
+.booking-card>*{position:relative;z-index:1}
+.page-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#f7f6ee 10%,#e4eadc 100%)}
+.page-hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 12% 12%,rgba(255,255,255,.85),transparent 25rem);
+  pointer-events:none;
+}
+.page-hero .container{position:relative;z-index:1}
+.about-image img,.home-image img,.team-card img,.service-photo img{border-radius:18px}
+.site-footer{background:#ebece4;border-top:1px solid rgba(53,68,49,.1)}
+.footer-wrap>a:first-child{display:block;width:138px}
+.footer-wrap>a:first-child img{
+  content:url("assets/images/brand-logo.png");
+  width:138px;
+  height:138px;
+  border-radius:22px;
+  object-fit:cover;
+  mix-blend-mode:multiply;
+}
+.floating-line{box-shadow:0 12px 36px rgba(6,199,85,.25)}
+@media(max-width:1050px){
+  .brand{min-width:auto}
+  .brand:after{font-size:19px}
+}
+@media(max-width:850px){
+  .site-header nav{background:rgba(255,254,249,.98)}
+  .hero:after{width:270px;height:250px;right:-95px}
+}
+@media(max-width:560px){
+  .brand img{width:47px;height:47px}
+  .brand:after{font-size:18px;letter-spacing:.1em}
+  .booking-card{border-radius:22px}
+  .footer-wrap>a:first-child img{width:120px;height:120px}
+}
